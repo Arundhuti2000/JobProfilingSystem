@@ -117,7 +117,7 @@ namespace JobProfilingSystem
             JobPriority priority = (JobPriority)Enum.Parse(typeof(JobPriority), cmbPriority.SelectedItem.ToString());
             Random random = new Random();
             List<int> data = new List<int>();
-            int dataSize = random.Next(15, 50); // Generate random list size between 5 and 15 elements
+            int dataSize = random.Next(100, 1000); // Generate random list size between 5 and 15 elements
             for (int i = 0; i < dataSize; i++)
             {
                 data.Add(random.Next(1, 101)); // Random values between 1 and 100
